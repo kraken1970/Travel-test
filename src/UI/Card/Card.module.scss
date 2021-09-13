@@ -1,0 +1,63 @@
+.card {
+  width: 835px;
+  padding: 25px;
+  border: 1px solid #eaeaea;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftSide {
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  color: #868686;
+}
+
+.stars {
+  margin-right: 8px;
+  ul li {
+    margin-right: 4px !important;
+  }
+  svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.type {
+  position: relative;
+  margin-right: 16px;
+  &::after {
+    content: '.';
+    position: absolute;
+    top: -22px;
+    font-size: 32px;
+    right: -12px;
+  }
+}
+
+.reviews {
+  margin-right: 16px;
+}
+
+.rightSide {
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button {
+  background-color: lime;
+}

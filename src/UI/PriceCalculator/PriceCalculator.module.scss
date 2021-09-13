@@ -1,0 +1,80 @@
+.priceCalculator {
+  // padding-top: 110px;
+  // padding-bottom: 110px;
+  // background-color: #eff7ff;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 150%;
+  margin-bottom: 32px;
+  @media (max-width: 767px) {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+}
+
+.calculatorCards {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.description {
+  text-align: center;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 150%;
+  margin-bottom: 64px;
+  span {
+    font-weight: 500;
+  }
+}
+
+.calculatorContainer {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.slider {
+  padding: 32px 0;
+}
+
+.sliderTitle {
+  margin-bottom: 70px;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 150%;
+}
+
+.slederPoints {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+}
+
+.point {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  color: #9e9e9e;
+}
+
+.CalculatorCards {
+  display: flex;
+  justify-content: space-between;
+}
+.cardWrap {
+  width: calc(50% - 12px);
+}
+
+.calcBtn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 64px;
+  outline: none;
+}

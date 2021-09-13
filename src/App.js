@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
+import { HotelContext } from './context'
+import './App.scss'
+import HotelsPage from './pages/HotelsPage/HotelsPage'
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <HotelContext.Provider
+      value={{
+        isLoading,
+      }}
+    >
+      <Router>
+        <HotelsPage />
+      </Router>
+    </HotelContext.Provider>
+  )
 }
 
-export default App;
+export default App

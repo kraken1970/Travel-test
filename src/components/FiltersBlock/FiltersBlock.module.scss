@@ -1,0 +1,48 @@
+.filtersBlock {
+  width: 325px;
+  display: flex;
+  flex-direction: column;
+}
+
+.countrySelect,
+.typeSelect,
+.starsCheck,
+.reviewsInput {
+  margin-bottom: 25px;
+}
+
+.starsCheck {
+  padding-left: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+}
+
+.checkGroup {
+  display: flex;
+  flex-direction: column;
+  label {
+    margin-bottom: 15px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.revInput {
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.filterButton {
+  border-radius: 15px;
+  height: 56px;
+}
+
+.acceptButton {
+  margin-bottom: 15px;
+}
