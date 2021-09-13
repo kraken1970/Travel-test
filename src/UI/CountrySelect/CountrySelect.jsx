@@ -30,7 +30,7 @@ const CountrySelect = () => {
           <Option value='4'>Алжир</Option>
           <Option value='5'>Ангола</Option>
           <Option value='6'>Андорра</Option>
-          <Option value='6'>Греция</Option>
+          <Option value='7'>Греция</Option>
         </Select>
       </div>
     </div>
