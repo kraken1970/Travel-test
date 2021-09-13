@@ -14,14 +14,14 @@ const CountrySelect = () => {
           placeholder='Поиск стран'
           optionFilterProp='children'
           filterOption={(input, option) =>
-            option
+            option.children
               .toLowerCase()
               .indexOf(input.toLowerCase()) >= 0
           }
           filterSort={(optionA, optionB) =>
-            optionA
+            optionA.children
               .toLowerCase()
-              .localeCompare(optionB.toLowerCase())
+              .localeCompare(optionB.children.toLowerCase())
           }
         >
           <Option value='1'>Австрия</Option>
@@ -30,7 +30,7 @@ const CountrySelect = () => {
           <Option value='4'>Алжир</Option>
           <Option value='5'>Ангола</Option>
           <Option value='6'>Андорра</Option>
-          <Option value='7'>Греция</Option>
+          {/* <Option value='7'>Греция</Option> */}
         </Select>
       </div>
     </div>
